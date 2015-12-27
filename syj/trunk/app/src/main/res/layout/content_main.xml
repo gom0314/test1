@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.syj.syj.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation = "vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="bottom"
+        android:textColor="#FF00FF"
+        android:textStyle="bold|italic"
+        android:text="test!" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="ID"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="입력"
+        android:textColorHighlight="#0000FC"
+        android:textColor="#0000FF"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="PW"/>
+
+    <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edit_pw"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="입력"
+            android:textColorHighlight="#0000FC"
+            android:textColor="#0000FF"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnlogin"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="힌트"
+        android:onClick="onClick"/>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/blogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:onClick="onClick"/>
+
+</android.support.v7.widget.LinearLayoutCompat>
